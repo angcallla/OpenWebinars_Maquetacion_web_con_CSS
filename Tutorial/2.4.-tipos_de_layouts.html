@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Tipos de layouts</title>
+</head>
+<body>
+
+    <h1>Maquetación tradicional con CSS: Tipos de layouts</h1>
+
+    <p>Podemos distinguir los siguientes tipos de layouts:</p>
+
+    <ul>
+        <li>Fixed</li>
+        <li>Elastic</li>
+        <li>Fluid (%)</li>
+        <li>Con Min/Max Sizin</li>
+        <li>Responsive (no son objeto de este curso)</li>
+        <li>Mezcla de varios</li>
+    </ul>
+
+    <p>Ahora vamos a explicar los cuatro primeros.</p>
+
+    <h2>Tipo Fixed</h2>
+
+    <p>Es aquel en el que yo especifico de manera fija lo que va a ocupar (anchura) mi página web en píxeles</p>
+
+    <h3>Ventaja</h3>
+
+    <ul>
+        <li>Siempre tengo el mismo tamaño en todas mis páginas</li>
+        <li>Tengo total control del tamaño de mi contenido en mi página web</li>
+    </ul>
+
+    <h3>Desventaja</h3>
+
+    <ul>
+        <li>En pantallas pequeñas puede aparecer scroll horizontal (EL MAL)</li>
+        <li>
+            En pantallas grandes puede aparecer mucho espacio en blanco a los lados si el contenedor principal
+            no es muy ancho.
+        </li>
+    </ul>
+
+    <h2>Tipo Elastic</h2>
+
+    <p>Establecemos la anchura del diseño de mi página web con la unidad de medida "em"</p>
+
+    <h3>Ventajas</h3>
+
+    <ul>
+        <li>Como el tamaño tiene como referencia al tamaño por defecto de la letra, la página va a escalar correctamente</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+
+    <ul>
+        <li>Si yo hago zoom in o zoom out pueden aparecer elementos que se solapan</li>
+        <li>Habría que probar en todo tipo de dispositivos y tamaños de letra</li>
+        <li>Desventajas de Fixed</li>
+    </ul>
+
+    <h2>Tipo Fluid</h2>
+
+    <p>
+        Lo que digo es, con respecto al porcentaje de ancho que ocupa mi pantalla, que porcentaje debe ocupar mi página web 
+        (siempre con respecto a la etiqueta padre).
+    </p>
+
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Proporción siempre la misma para los elementos</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+    <ul>
+        <li>En pantallas pequeñas las columnas pueden ser muy estrechas</li>
+        <li>En columnas estrechas y textos largos -> celdas muy altas</li>
+        <li>Problemas si hay imágenes y vídeos :(</li>
+    </ul>
+
+    <h2>Tipo Max/Min width (Híbrido)</h2>
+
+    <p>
+        Tengo un porcentaje pero con una longitud máxima y una longitud mínima. De manera que solo puedo crecer
+        o encoger hasta un tamaño determinado.
+    </p>
+
+    <h2>Tipo Responsive</h2>
+
+    <p>
+        Layout que cambia dependiendo de las características de la pantalla, normalmente dependiendo sobre todo
+        de la anchura de la pantalla (sólo uno, cambio fluido).
+    </p>
+
+    <p>Si tengo más de un layout para la página, se denomina adaptative (cambio brusco)</p>
+
+    <h2>¿CUÁL ESCOJO DE ENTRE TODOS ELLOS?</h2>
+
+    <p>
+        No hay una respuesta única, depende de cada tipo de proyecto. El profesor usa más el híbrido.
+    </p>
+    
+</body>
+</html>

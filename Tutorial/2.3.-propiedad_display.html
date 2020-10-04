@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Propiedad display</title>
+</head>
+<body>
+
+    <h1>Maquetación tradicional con CSS: Propiedad display</h1>
+
+    <p>
+        Como sabemos, los elementos en la web con interpretados como cajas con sus componentes (content, padding, margin).
+        Estos tienen comportamientos en línea o en bloque que vienen determinados o por defecto o con css utilizando
+        la propiedad "display"
+    </p>
+
+    <h2>Display: valores más usados</h2>
+
+    <ul>
+        <li>inline</li>
+        <li>inline-block</li>
+        <li>block</li>
+        <li>none</li>
+        <li>Relacionados con tablas</li>
+        <li>Flex y Grid (próximos cursos)</li>
+    </ul>
+
+    <p>Y algunos más: <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">enlace</a></p>
+
+    <h3>Inline, Inline-block</h3>
+
+    <h4>Inline</h4>
+    <p>
+        Los elementos Inline no rompen el flujo de la línea y se van colocando uno detrás de otro
+        mientras caben. Aceptan "margin" y "padding" (solo en horizontal). Ignoran "width" y "height".
+    </p>
+    <p>
+        Etiquetas inline por defecto: span, a, b, img (esta si hace caso de width y height), ...
+    </p>
+
+    <h4>Inline-Block</h4>
+    <p>
+        Funciona igual que Inline, pero si hace caso a las propiedades "width" y "height".
+    </p>
+
+    <h3>Block</h3>
+
+    <p>
+        Los elementos en bloque rompen el flujo de la línea y provocan "un salto de línea" tanto anterior como posterior.
+        Por defecto si no especificamos una anchura, ocupan la del elemento que los contiene (la etiqueta padre).
+    </p>
+
+    <p>
+        Etiquetas block por defecto: h1 a h6, p, section, div, ul, li, nav, todas las etiquetas semánticas, ...
+    </p>
+
+    <h3>None</h3>
+
+    <p>
+        Una vez fijado el elemento desaparece. No dejará un espacio vacío aunque siga en el código HTML.
+        Es diferente de la propiedad visibility:hidden que si deja el hueco aunque no se muestre.
+    </p>
+
+    <h3>Relativos a tablas</h3>
+
+    <p>
+        Si quiero simular que un elemento se comporte como un elemento de tabla, le aplico los siguientes valores:
+    </p>
+
+    <h4>Valores de display y relacionados con tablas</h4>
+
+    <ul>
+        <li>table (la etiqueta se va a comportar como una tabla)</li>
+        <li>table-cell (se comportará como un td o th)</li>
+        <li>table-row (se comportará como un tr)</li>
+        <li>table-caption</li>
+        <li>table-column</li>
+        <li>table-colgroup</li>
+        <li>table-header-group</li>
+        <li>table-footer-group</li>
+        <li>table-row-group</li>
+    </ul>
+
+    
+
+    
+</body>
+</html>

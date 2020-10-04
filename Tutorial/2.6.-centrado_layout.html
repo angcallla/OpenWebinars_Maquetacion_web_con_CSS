@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Centrado del layout</title>
+</head>
+<body>
+
+    <h1>Maquetación tradicional con CSS: Centrado del layout</h1>
+
+    <p>
+        Cuando hablamos de centrar un elemento o etiqueta, siempre lo hacemos con respecto a su elemento o 
+        etiqueta padre. Tendremos dos tipos de centrado: vertical y horizontal.
+    </p>
+
+    <h2>Centrado horizontal</h2>
+
+    <ul>
+        <li>Elementos en línea: text-align:center; <b>(al padre)</b></li>
+        <li>
+            Elementos en bloque:
+            <ul>
+                <li>margin: [X] auto; <b>(al elemento. Debe de tener anchura)</b></li>
+            </ul>
+        </li>
+        <li>
+            Varios elementos en Bloque en la misma fila:
+            <ul>
+                <li>text-align: center; <b>(al padre)</b></li>
+                <li>display: inline-block <b>(a los elementos)</b></li>
+                <li><b>Deben de tener anchura</b></li>
+            </ul>
+        </li>
+        <li>Con contenedores <b>flex (próximos cursos)</b></li>
+    </ul>
+
+    <h2>Centrado vertical</h2>
+
+    <h3>Elementos en línea</h3>
+
+    <ul>
+        <li>El <b>mismo padding</b> arriba y abajo</li>
+        <li>
+            <b>vertical-align:middle</b> si está dentro del elemento de tabla o lo estamos simulandolo
+            con la propiedad display. (El padre debe tener altura fija)
+        </li>
+        <li>Con contenedores <b>flex (próximos cursos)</b></li>
+    </ul>
+    
+</body>
+</html>

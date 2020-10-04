@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Box Sizing</title>
+</head>
+<body>
+    
+    <h1>Maquetación tradicional con CSS: Box Sizing</h1>
+
+    <p>
+        Como ya sabíamos, toda etiqueta en html es una caja. También habíamos hablado que la maquetación web es
+        disponer los elementos en nuestra web, su estructura, y vimos el comportamiento en línea y en bloque.
+    </p>
+
+    <p>
+        Entonces ahora, debemos de aprender como medir los anchos y los altos de los distintos elementos.
+    </p>
+
+    <h2>Dimensiones por defecto</h2>
+
+    <p>
+        Lo primero que tenemos que tener en cuenta es como calculan los navegadores las cajas.
+    </p>
+
+    <p>Por defecto es:</p>
+
+    <ul>
+        <li>Altura del elemento = altura del contenido + padding + borde</li>
+        <li>Anchura del elemento = anchura del contenido + padding + borde</li>
+    </ul>
+
+    <p>
+        Lo que ocurre entonces es que tendríamos que hacer muchas cuentas para controlar todos los tamaños.
+        Para evitar eso de tener que hacer tantas cuentas, debemos añadir a nuestro css lo siguiente:
+    </p>
+
+    <ul style="list-style-type: none;">
+        <li>
+            *{
+            <ul style="list-style-type: none;">
+                <li>-webkit-box-sizing: border-box;</li>
+                <li>-moz-box-sizing: border-box;</li>
+                <li><b>box-sizing: border-box;</b></li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <p><b>APLICAR ESTE SIEMPRE</b></p>
+
+    <p>De esta manera cuando defino el ancho de una caja, lo hago contanto ya con el padding y el border</p>
+
+    <h3>Otras posibilidades a box-sizing</h3>
+
+    <ul>
+        <li><b>content-box</b>: La forma por defecto donde tengo que sumar padding y border</li>
+        <li>
+            <b>padding-box</b>: Considera content y padding y solo falta sumar el borde (aún no tiene soporte en navegadores)
+        </li>
+    </ul>
+
+
+</body>
+</html>
