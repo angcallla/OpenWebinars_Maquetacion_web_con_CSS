@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Propiedad position</title>
+</head>
+<body>
+    
+    <h1>Maquetación tradicional con CSS: Propiedad position</h1>
+
+    <p>
+        La propiedad position me va a permitir romper el flujo normal de los elementos. Se utiliza para detalles 
+        más finos en la maquetación.
+    </p>
+
+    <h2>Valores de la propiedad position</h2>
+
+    <ul>
+        <li>static (propiedad por defecto)</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+        <li>inherit</li>
+    </ul>
+
+    <p>
+        Todos estos valores van unidos a las propiedades: top, bottom, left, right (desplazamiento) y 
+        z-index (capas, para que cuando haya objetos que se solapen, pueda indicar cual quiero que se vea primero)
+    </p>
+
+    <h3>Explición de cada valor de la propiedad position</h3>
+
+    <h4>static</h4>
+
+    <p>Es el valor por <b>defecto</b></p>
+
+    <p>
+        El elemento sigue el flujo que le corresponde. Aunque se use las propiedades unidad de desplazamiento y
+        z-index, <b>NO</b> se aplican.
+    </p>
+
+    <h4>relative</h4>
+
+    <p>
+        <b>Como static</b> pero <b>SÍ</b> atiende a las propiedades unidad de posiciónamiento o z-index. Lo que va a hacer
+        es desplazarse hacia donde indiquemos desde la posición de flujo por defecto.
+    </p>
+
+    <h4>fixed</h4>
+
+    <p>
+        Establezco una posición a la caja con las propiedades de posicionamiento y z-index con respecto a la pantalla
+        de mi web, y ya no se va a mover de ahí.
+    </p>
+
+    <h4>absolute</h4>
+
+    <p>
+        Se comporta igual que fixed pero se posiciona la caja tomando como referencia la primera etiqueta
+        antecesora que posea el valor de position igual a relative. Es para posicionar en cualquiera posición,
+        dentro de un contenedor, a un hijo.
+    </p>
+
+    <h4>sticky</h4>
+
+    <p>
+        Relative hasta llegar a una posición del scroll que lo hace convertirse en fixed. 
+    </p>
+
+    <h4>inherit</h4>
+
+    <p>
+        La propidad position no actua en cascada, si queremos que los hijos se vean afectados por el valor position
+        del padre, deberemos añadir a estos hijos el valor inherit.
+    </p>
+
+    <h3>Z-INDEX</h3>
+
+    <p>
+        Z-INDEX sirve para que, si dos o más elementos se solapan, decir cual va por encima del otro. Esta propiedad
+        me permite añadir de esta manera capas a mi HTML. El z-index más alto va delante de todos los menores a él.
+    </p>
+
+    <hr>
+
+    <h2>Centrado vertical con position (para elementos de <b>bloque</b>)</h2>
+
+    <h3>Si conocemos la altura del elemento y esta es or ejemplo 150px;</h3>
+
+    <ul style="list-style-type: none;">
+        <li>
+            .contenedor{
+            <ul style="list-style-type: none;">
+                <li>position: relative;</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>
+            .elemento_a_centrar{
+            <ul style="list-style-type: none;">
+                <li>height: 150px;</li>
+                <li>margin-top: -75px; /**la mitad de la altura**/</li>
+                <li>position: absolute;</li>
+                <li>top: 50%;</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <h3>Si no conocemos la altura</h3>
+
+    <ul style="list-style-type: none;">
+        <li>
+            .contenedor{
+            <ul style="list-style-type: none;">
+                <li>position: relative;</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>
+            .elemento_a_centrar{
+            <ul style="list-style-type: none;">
+                <li>position: absolute;</li>
+                <li>top: 50%;</li>
+                <li>transform: translateY(-50%);</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+
+
+
+</body>
+</html>
