@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Columnas</title>
+</head>
+<body>
+
+    <h1>Maquetación tradicional con CSS: Columnas</h1>
+
+    <p>En CSS, podemos <b>dividir</b> el <b>contenido</b> de una caja en varias <b>columnas</b> como podemos ver en un periódico</p>
+
+    <p>Esto se hace con una serie de propiedades CSS</p>
+
+    <h3>Propiedades CSS</h3>
+
+    <ul>
+        <li><b>column-count</b>: Donde le digo al contenedor padre cuantas columnas quiero que tenga</li>
+        <li>
+            <b>column-width</b>: Para fijar el ancho de las columnas. Si no se pone, el navegador es quien
+            lo calcula. Atendiendo al ancho que pongamos, el navegador determinará cuantas columnas vamos a
+            tener. 
+        </li>
+        <li><b>column-gap</b>: Separación entre columnas</li>
+        <li><b>column-rule</b>: Si quiero mostrar la línea que separa las columnas y con qué estilo</li>
+        <li>
+            <b>column-span</b>: Si quiero que algun elemento salga de la separación entre columnas 
+            y ocupe todas ellas valores (<b>all y none</b>)
+        </li>
+        <li>
+            <b>column-fill</b>: Si quiero que las columnas se igualen en altura. Para ello, el padre deberá
+            tener una altura determinada. Valores <b>auto</b> o <b>balance</b> (todas las columnas la misma altura)
+        </li>
+        <li><b>break-inside:avoid</b>: Si, por ejemplo, no quiero que un texto se parta de una columna a otra.</li>
+    </ul>
+
+    <b style="font-size: 1.8em; color: red;">ESTAS SON PROPIEDADES NUEVAS EN CSS3 Y NO TODOS LOS NAVEGADORES LAS SOPORTAN</b>
+    
+</body>
+</html>
