@@ -13,13 +13,16 @@ h1{
 
 .top-menu{
     background-color: black;
+    color: white;
 }
 
-.top-menu nav{
-    color: white;
+.top-menu div{
     display: inline-block;
-    margin-right: 8%;
     padding: 10px;
+    
+    width: 15%;
+    /* o
+    margin-right: 8%; */
 }
 
 .left-menu{
