@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="2.9.-elementos_flotantes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación tradicional con CSS: Elementos flotantes</title>
+</head>
+<body>
+
+    <h1>Maquetación tradicional con CSS: Elementos flotantes</h1>
+
+    <p>
+        Los elementos flotantes son aquellos a los que yo les he añadido la propiedad CSS "float" y es una
+        manera distinta de crear estructuras.
+    </p>
+
+    <p>
+        La propiedad float que puede tomar los valores <b>left</b> o <b>right</b>, estaba pensada en un principio
+        para especificar como se dispone un texto alrededor de una imagen.
+    </p>
+
+    <b>Algo similar a esto:</b>
+
+    <div class="container">
+        <img src="../Tutorial/Ejemplos/2.9.-Elementos flotantes/img/logo.jpg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique omnis obcaecati, veritatis consequatur
+            laboriosam sunt cum assumenda accusamus eius deleniti mollitia, at tenetur nulla quis quidem explicabo non
+            accusantium? Placeat?</p>
+        <p>
+            Aquí seguimos teniendo un hueco vertical y por tanto los siguiente elementos 
+            se van añadiendo rellenando ese hueco hasta rebasar al elemento flotante.
+        </p>
+
+        <p> 
+            En este párrafo como ya se ha superado la vertical de la imagen, 
+            ya vuelve a ocupar todo el ancho de la página o caja padre.
+        </p>
+    </div>
+
+    <h3>Propiedad Clear</h3>
+
+    <p>
+        Para forzar a que el contenido rebase forzosamente la vertical de la imagen. Añadimos entonces la
+        propiedad <b>clear:right (o left o both)</b> y ese elemento se añadirá en el espacio que rebase la vertical
+    </p>
+
+    <div class="container">
+        <img src="../Tutorial/Ejemplos/2.9.-Elementos flotantes/img/logo.jpg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique omnis obcaecati, veritatis consequatur
+            laboriosam sunt cum assumenda accusamus eius deleniti mollitia, at tenetur nulla quis quidem explicabo non
+            accusantium? Placeat?</p>
+        <p id="clear">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique omnis obcaecati, veritatis
+            consequatur
+            laboriosam sunt cum assumenda accusamus eius deleniti mollitia, at tenetur nulla quis quidem explicabo non
+            accusantium? Placeat?</p>
+    </div>
+
+    <h3>Clearfix Hack (Problema)</h3>
+
+    <p>
+        Cuando tenemos un contendor que dentro posee elementos flotantes, ese contenedor no tiene la referencia
+        en altura de los elementos flotantes. Por tanto, nos podemos encontrar con situaciones como esta:
+    </p>
+
+    <div class="container">
+        <img src="../Tutorial/Ejemplos/2.9.-Elementos flotantes/img/logo.jpg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique omnis obcaecati, veritatis consequatur
+            laboriosam sunt cum assumenda accusamus eius deleniti mollitia, at tenetur nulla quis quidem explicabo non
+            accusantium? Placeat?</p>
+    </div>
+
+    <p>Las soluciones son dos (ambas son propiedades CSS al elemento contenedor)</p>
+
+    <ul style="list-style-type: none;">
+        <li>
+            selector{
+            <ul style="list-style-type: none;">
+                <li>overflow-y: auto;</li>
+                <li>o</li>
+                <li>height: [Altura suficiente];</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <p>Solucionado:</p>
+
+    <div class="container">
+        <img src="../Tutorial/Ejemplos/2.9.-Elementos flotantes/img/logo.jpg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique omnis obcaecati, veritatis consequatur
+            laboriosam sunt cum assumenda accusamus eius deleniti mollitia, at tenetur nulla quis quidem explicabo non
+            accusantium? Placeat?</p>
+    </div>
+    
+    <h2>Creando Layouts</h2>
+
+    <p style="font-size: 1.2;">
+        Posteriormente se dieron cuenta de que con los elementos flotates se podían crear estructuras 
+        para maquetar.
+    </p>
+
+    <p>
+        Esto lo haremos primero flotando los elementos que necesitemos (aquellos elementos que determinen una
+        sección de mi página: div, nav, header, ...) y segundo dándoles las dimensiones adecuadas.
+    </p>
+
+    
+
+</body>
+</html>
