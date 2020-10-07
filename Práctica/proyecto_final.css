@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar{
+    background-color: darkblue;
+    color: deeppink;
+    font-size: 1.2em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.sidebar div{
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.top-page{
+    position: relative;
+}
+
+.top-page img{
+    margin: 0px auto;
+    width: 100%;
+    z-index: 0;
+    
+}
+
+.link{
+    background-color: darkblue;
+    color: deeppink;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 20%;
+    text-align: center;
+    font-size: 1.4em;
+    z-index: 9;
+    position: absolute;
+    left: 65%;
+    top: 40%;
+    min-width: 148px;
+    height: 150px;
+}
+
+.link p:first-child{
+    padding: 0px;
+    margin: 5%;
+}
+
+.link p:nth-child(2){
+    color: white;
+    padding: 10px;
+    background-color: deeppink;
+    border-radius: 10px;
+    margin: 0px auto;
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: darkblue;
+}
+
+.phrases{
+    margin: 0px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.phrase{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.phrase img{
+    width: 40%;
+}
+
+.phrase:nth-child(2){
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.information{
+    margin: 20px auto;
+    width: 70%;
+}
+
+.information img{
+    float: left;
+}
+
+.information p::first-letter{
+    color: deeppink;
+    font-size: 2em;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+.paragraphs{
+    margin: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.table{
+    display: table;
+    margin: 60px auto;
+    width: 40%;
+}
+
+.row{
+    display: table-row;
+}
+
+.cell, .contact, .copyright, .rrss{
+    display: table-cell;
+}
+
+.cell img{
+    width: 200px;
+}
+
+.footer{
+    padding: 20px;
+    background-color: darkblue;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.contact{
+    color: deeppink;
+    font-size: 1.2em;
+    font-style: oblique;
+    width: 300px;
+}
+
+.contact p{
+    margin: 0px;
+}
+
+.copyright{
+    width: 700px;
+    text-align: center;
+    color: deeppink;
+    font-size: 1.2em;
+}
+
+.rrss{
+    position: relative;
+}
+
+.rrss img{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+}
+
+.rrss img:first-child{
+    left: 70px;
+}
+
+.rrss img:nth-child(2){
+    left: 105px;
+}
+
+.rrss img:last-child{
+    left: 140px;
+}
+
