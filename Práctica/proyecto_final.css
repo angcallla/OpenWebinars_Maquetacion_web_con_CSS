@@ -3,6 +3,26 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* RESETEO LIMITADO DE PROPIEDADES */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h6{
+    margin: 0px;
+}
+
+/* Layout híbrido */
+.sidebar, .main, .footer{
+    max-width: 1366px;
+    min-width: 360px;
+    margin: 0px auto;
+}
+
+
 .sidebar{
     background-color: darkblue;
     color: deeppink;
@@ -21,10 +41,10 @@
 
 .top-page{
     position: relative;
+    text-align: center;
 }
 
 .top-page img{
-    margin: 0px auto;
     width: 100%;
     z-index: 0;
     
@@ -33,17 +53,15 @@
 .link{
     background-color: darkblue;
     color: deeppink;
-    padding: 20px 30px;
+    padding: 10px;
     border-radius: 30px;
     width: 20%;
-    text-align: center;
     font-size: 1.4em;
     z-index: 9;
     position: absolute;
+    text-align: center;
     left: 65%;
-    top: 40%;
-    min-width: 148px;
-    height: 150px;
+    top: 30%; 
 }
 
 .link p:first-child{
